@@ -6,7 +6,7 @@ on:
   pull_request:
     branches:
       - develop
-    types: [closed]
+    types: [opened]
 
 # 動かす内容
 jobs:
