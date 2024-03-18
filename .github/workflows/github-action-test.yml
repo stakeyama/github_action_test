@@ -15,5 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
-      - run: echo "Hello World!"
       - run: exit 1
+      - run: echo "Hello World!"
+      
