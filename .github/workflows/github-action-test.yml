@@ -16,5 +16,5 @@ jobs:
     if: github.event.pull_request.merged == true
     steps:
       - run: exit 1
-      - run: echo "Hello World!"
+      - uses: actions/checkout@v2
       
