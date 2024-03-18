@@ -10,7 +10,7 @@ on:
 
 # 動かす内容
 jobs:
-  auto-Dev-deploy:
+  github-action-test:
     runs-on: ubuntsu-latest
     if: github.event.pull_request.merged == true
     steps:
