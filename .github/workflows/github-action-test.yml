@@ -1,0 +1,17 @@
+# ワークフローの名前
+name: github Action test
+
+# developにマージされたときにjobsの内容が動作する
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+# 動かす内容
+jobs:
+  auto-Dev-deploy:
+    runs-on: ubuntsu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - run: echo "Hello World!"
