@@ -11,7 +11,7 @@ on:
 # 動かす内容
 jobs:
   github-action-test:
-    runs-on: ubuntsu-latest
+    runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
       - run: echo "Hello World!"
