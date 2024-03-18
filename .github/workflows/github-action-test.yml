@@ -11,6 +11,7 @@ on:
 # 動かす内容
 jobs:
   github-action-test:
+    name: Test
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
