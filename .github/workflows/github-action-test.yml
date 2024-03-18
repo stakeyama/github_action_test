@@ -5,7 +5,7 @@ name: github Action test
 on:
   pull_request:
     branches:
-      - main
+      - pre
     types: [closed]
 
 # 動かす内容
